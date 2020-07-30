@@ -13,7 +13,7 @@ function init()
     renderer = new THREE.WebGLRenderer( {antialias:true} );
     var width = window.innerWidth;
     var height = window.innerHeight;
-    renderer.setClearColor(0x0D65B4)
+    renderer = new THREE.WebGLRenderer( { alpha: true } );
     renderer.setSize (width, height);
     document.body.appendChild (renderer.domElement);
 
